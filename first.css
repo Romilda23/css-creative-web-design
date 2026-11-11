@@ -1,0 +1,1138 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: black;
+}
+#navbar{
+    background-color:rgb(228, 222, 222);
+    padding:8px;
+}
+#navhead{
+    padding-top:20px;
+    padding-left:50px;
+    width:300px;
+    font-weight: 200;
+    border-radius: 50px;
+    margin-top:10px;
+    padding-top:2px;
+    padding-left:1px;
+    text-align: center;
+    animation: glow 5s infinite;
+}
+@keyframes glow{
+    0%{
+        color:rgb(197, 3, 3);
+        text-shadow: 0 0 10px red,
+                     0 0 20px red;
+    }
+    25%{
+        color:#4516d0;
+        text-shadow: 0 0 10px rgb(1, 20, 142),
+                     0 0 20px rgb(38, 5, 156);
+    }
+     50%{
+        color:rgb(224, 66, 3);
+        text-shadow: 0 0 10px rgb(197, 53, 5),
+                     0 0 20px rgb(213, 83, 8);
+    }
+     75%{
+        color:rgb(13, 112, 40);
+        text-shadow: 0 0 10px rgb(2, 81, 3),
+                     0 0 20px rgb(0, 62, 18);
+    }
+     100%{
+        color:rgb(135, 9, 101);
+        text-shadow: 0 0 10px rgb(73, 2, 62),
+                     0 0 20px rgb(173, 4, 69);
+    }
+}
+#list{
+    display: flex;
+    gap:30px;
+    justify-content: end;
+    list-style: none;
+    padding-right: 100px;
+    font-size:25px;
+}
+li{
+    position: relative;
+    bottom: 30px;
+    color: white;
+    background-color: rgb(11, 11, 11);
+    border-radius: 5px;
+    box-shadow: 0 0 20px black;
+}
+li:hover{
+    color: white;
+    background-color: black;
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: 4px 4px 40px rgb(227, 17, 2);
+}
+#sky1{
+    height:200px;
+    width: 100%;
+    position:relative;
+}
+#moon{
+    height: 150px;
+    width:150px;
+    border-radius:50%;
+    background-color: white;
+    box-shadow: 0 0 10px beige,
+                0 0 20px red,
+                0 0 30px rgb(228, 228, 30);
+    margin-left:130px;
+    margin-top:100px;
+    filter:brightness(80%);
+}
+#star1{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 10%; left: 10%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star2{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 25%; left: 30%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star3{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 15%; left: 55%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star4{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 35%; left: 80%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star5{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 50%; left: 15%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star6{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 65%; left: 35%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star7{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 45%; left: 60%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star8{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 80%; left: 75%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star9{
+    width: 10px;
+    height: 10px;
+    background: gold;
+    position: absolute;
+     top: 75%; left: 50%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star10{
+    width: 10px;
+    height: 10px;
+    background: gold;
+    position: absolute;
+    top: 30%; left: 45%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+
+#star1{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 10%; left: 10%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star2{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 25%; left: 30%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star3{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 15%; left: 55%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star4{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 35%; left: 80%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star5{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 50%; left: 15%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star6{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 65%; left: 35%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star7{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 45%; left: 60%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star8{
+    width: 10px;
+    height: 10px;
+    background: gold;
+     position: absolute;
+    top: 80%; left: 75%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#star9{
+    width: 10px;
+    height: 10px;
+    background: gold;
+    position: absolute;
+     top: 75%; left: 50%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+#bdots1{
+    height: 8px;
+    width:8px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top: 18%; left: 8%;
+}
+#bdots2{
+    height: 8px;
+    width:8px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top: 42%; left: 22%;
+}
+#bdots3{
+    height: 8px;
+    width:8px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+   top: 28%; left: 34%;
+}
+#bdots4{
+    height: 8px;
+    width:8px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top: 55%; left: 39%;
+}
+#bdots5{
+    height: 8px;
+    width:8px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+   top: 32%; left: 49%;
+}
+#bdots6{
+    height: 8px;
+    width:8px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top: 20%; left: 60%;
+}
+#bdots7{
+    height: 8px;
+    width:8px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top: 45%; left: 66%;
+}
+#bdots8{
+    height: 8px;
+    width:8px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top: 68%; left: 76%;
+}
+#bdots9{
+    height: 8px;
+    width:8px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top: 35%; left: 84%;
+}
+#bdots10{
+    height: 8px;
+    width:8px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top: 58%; left: 92%;
+}
+#dot1   {
+    width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;  left: 4%; }
+#dot2   { 
+     width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 12%; left: 17%; }
+#dot3   {
+     width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 8%;  left: 28%; }
+#dot4   { 
+     width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 18%; left: 39%; }
+#dot5   { 
+     width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 6%;  left: 47%; }
+#dot6   { 
+     width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%; left: 56%; }
+#dot7   { 
+     width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 9%;  left: 68%; }
+#dot8   { 
+     width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%; left: 78%; }
+#dot9   { 
+     width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 7%;  left: 88%; }
+#dot10  { 
+     width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 16%; left: 95%; }
+
+#dot11  { 
+     width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%; left: 8%; }
+#dot12  { 
+         width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 32%; left: 19%; }
+#dot13  {
+         width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+     top: 27%; left: 30%; }
+#dot14  { 
+         width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 38%; left: 42%; }
+#dot15  { 
+         width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 29%; left: 51%; }
+#dot16  {
+         width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+     top: 35%; left: 63%; }
+#dot17  { 
+         width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 24%; left: 72%; }
+#dot18  {
+         width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute; 
+    top: 40%; left: 82%; }
+#dot19  { 
+         width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%; left: 91%; }
+#dot20  { 
+         width:2px;
+    height:2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 37%; left: 97%; }
+
+#sky2{
+    height:200px;
+    width: 100%;
+    position:relative;
+}
+#sky3{
+    height:200px;
+    width: 100%;
+    position:relative;
+}
+#sky4{
+    height:200px;
+    width: 100%;
+    position:relative;
+}
+#registercontainer{
+    height:600px;
+    width:1000px;
+    opacity:0.3;
+    background-color: white;
+    margin-top:-760px;
+    margin-left:180px;
+    border-radius: 100px;
+    box-shadow: 0 0 100px rgb(249, 249, 14);
+}
+#regcontent{
+    position: absolute;
+    top:300px;
+    left:400px;
+}
+#formhead{
+    font-size: 50px;
+    color: beige;
+    text-shadow: 0, 0 30px rgb(78, 170, 236);
+    margin-left:100px;
+    margin-top:-30px;
+
+}
+
+#fnamelabel{
+    font-size:18px;
+    color: black;
+    font-weight: 800;
+    margin-left:-30px;
+    margin-top:20px;
+}
+#fname{
+    font-size:10px;
+    background-color: lightblue;
+    border-radius: 10px;
+    border:1px solid black;
+    padding:15px;
+    margin-left:10px;
+
+}
+#lnamelabel{
+    font-size:18px;
+    color: black;
+    font-weight: 800;
+    margin-left:80px;
+}
+#lname{
+    font-size:10px;
+    background-color: lightblue;
+    border-radius: 10px;
+    border:1px solid black;
+    padding:15px;
+    margin-left:10px;
+}
+#emaillabel{
+    font-size:18px;
+    color: black;
+    font-weight: 800;
+    margin-left:-30px;
+}
+#email{
+    font-size:10px;
+    background-color: lightblue;
+    border-radius: 10px;
+    border:1px solid black;
+    padding:15px;
+    margin-left: 55px;
+}
+#moblabel{
+    font-size:18px;
+    color: black;
+    font-weight: 800;
+    margin-left:80px;
+}
+#phoneno{
+    font-size:10px;
+    background-color: lightblue;
+    border-radius: 10px;
+    border:1px solid black;
+    padding:15px;
+    margin-left: 9px;
+}
+#userlabel{
+    font-size:18px;
+    color: black;
+    font-weight: 800;
+   margin-left:-30px;
+}
+#username{
+    font-size:10px;
+    background-color: lightblue;
+    border-radius: 10px;
+    border:1px solid black;
+    padding:15px;
+    margin-left: 20px;
+}
+#passlabel{
+    font-size:18px;
+    color: black;
+    font-weight: 800;
+   margin-left:-30px;
+}
+#newpassword{
+    font-size:10px;
+    background-color: lightblue;
+    border-radius: 10px;
+    border:1px solid black;
+    padding:15px;
+    margin-left: 22px;
+}
+#confpasslabel{
+    font-size:18px;
+    color: black;
+    font-weight: 800;
+   margin-left:60px;
+   
+}
+#confirmpassword{
+    font-size:10px;
+    background-color: lightblue;
+    border-radius: 10px;
+    border:1px solid black;
+    padding:15px;
+    margin-left: 20px;
+}
+#submitbtn{
+    font-size:15px;
+    padding:20px;
+    background-color: green;
+    border-radius:20px;
+    border:2px solid black;
+    box-shadow:0 0 30px green;
+    margin-left:170px;
+    margin-top:60px;
+}
+#submitbtn:hover{
+    color:white;
+    background-color: rgb(29, 4, 130);
+    box-shadow: 0 0 100px rgb(38, 0, 98);
+    cursor: pointer;
+    border:1px solid white;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:white;
+}
+#resetbtn{
+    font-size:15px;
+    padding:20px;
+    background-color: rgb(233, 34, 4);
+    border-radius:20px;
+    border:2px solid black;
+    box-shadow:0 0 30px rgb(236, 60, 60);
+    margin-left:80px;
+}
+#resetbtn:hover{
+    color:white;
+    background-color: rgb(243, 5, 5);
+    box-shadow: 0 0 100px rgb(240, 6, 6);
+    cursor: pointer;
+    border:1px solid white;
+}
+
+
+#cardcontainer{
+    display: flex;
+    gap:100px;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    height:650px;
+}
+.cardcontainer1{
+    background: linear-gradient(45deg,rgb(211, 223, 43) ,rgb(231, 233, 223),rgb(76, 76, 76));
+    height:350px;
+    width:200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 40px beige;
+    animation: move 3s infinite;
+} 
+@keyframes move{
+    25%{
+        transform: translateY(200px);
+    }
+    70%{
+        transform: translateY(-100px);
+    }
+    
+}
+.cardcontainer1:hover{
+    box-shadow: 2px 2px 100px gold;
+}
+.cardcontainer2{
+    background: linear-gradient(45deg,rgb(211, 223, 43) ,rgb(231, 233, 223),rgb(76, 76, 76));
+    height:350px;
+    width:200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 40px beige;
+    animation: up 3s infinite;
+}
+@keyframes up{
+    25%{
+        transform: translateY(-100px);
+    }
+    70%{
+        transform: translateY(200px);
+    }
+    
+}   
+.cardcontainer2:hover{
+    box-shadow: 2px 2px 100px rgb(11, 20, 123);
+}
+.cardcontainer3{
+    background: linear-gradient(45deg,rgb(211, 223, 43) ,rgb(231, 233, 223),rgb(76, 76, 76));
+    height:350px;
+    width:200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 40px beige;
+    animation: down 3s infinite;
+} 
+@keyframes down{
+    25%{
+        transform: translateY(200px);
+    }
+    70%{
+        transform: translateY(-100px);
+    }  
+} 
+.cardcontainer3:hover{
+    box-shadow: 2px 2px 100px rgb(225, 20, 6);
+} 
+#image1{
+    height:150px;
+    width: 200px;
+    position:relative;
+    border-radius: 10px;
+}
+#image2{
+    height:150px;
+    width: 200px;
+    position:relative;
+    border-radius: 10px;
+}
+#image3{
+    height:150px;
+    width: 200px;
+    position:relative;
+    border-radius: 10px;
+}
+#heading1{
+    margin-left:5px;
+    color:rgb(32, 32, 31);
+    font-size:24px;
+    background-color: rgb(241, 243, 101);
+    width:80px;
+    border:1px solid rgb(152, 150, 4);
+    margin-top:30px;
+}
+#heading2{
+    margin-left:5px;
+    color:rgb(3, 21, 69);
+    font-size:24px;
+    background-color: rgb(149, 149, 242);
+    width:50px;
+    border:1px solid blue;
+    margin-top:30px;
+}
+#heading3{
+    margin-left:5px;
+    color:rgb(161, 7, 7);
+    font-size:24px;
+    background-color: rgb(238, 99, 81);
+    width:110px;
+    border:1px solid rgb(125, 2, 2);
+    margin-top:30px;
+}
+#para1{
+    color:black;
+    margin-top:20px;
+    text-align: justify;
+    padding: 5px;
+    margin:5px;
+}
+#para2{
+    color:black;
+    margin-top:20px;
+    text-align: justify;
+    padding: 5px;
+    margin:5px;
+}
+#para3{
+    color:black;
+    margin-top:20px;
+    text-align: justify;
+    padding: 5px;
+    margin:5px;
+}
+#content{
+    background: white;
+    width:100%;
+    height:300px;
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(7, 10px);
+    gap:10px;
+}
+#circle{
+    color:blue;
+    background-color: blue;
+    height:8px;
+    width:8px;
+    border-radius:50%;
+}
+#content{
+    background-color: rgba(44, 32, 133, 0.435);
+    margin-top:150px;
+}
+#contentbg{
+    position:relative;
+    left:80px;
+    height:300px;
+    width:1200px;
+    filter: brightness(50%);
+    border-radius: 20px;
+    border:5px solid black;
+    box-shadow: 0 0 200px rgb(15, 188, 127);
+}
+#centrebox{
+    height:290px;
+    width:1000px;
+    background-color: rgb(242, 238, 238);
+    position:absolute;
+    left:180px;
+    top:1643px;
+    border-radius: 10px;
+    box-shadow:0 0 500px orangered;
+    opacity: 0.3;
+}
+#hexagon1{
+    background-color: rgb(249, 73, 8);
+    height:80px;
+    width:90px;
+    margin-left:250px;
+    margin-top:20px;
+    clip-path: polygon(25% 0, 
+    75% 0, 
+    100% 50%, 
+    75% 100%, 
+    25% 100%, 
+    0 50%);
+    transform: rotate(90deg);
+}
+#name1{
+    text-align:center;
+    font-size:20px;
+    margin-top:10px;
+    padding-left:-5px;
+    transform:rotate(-90deg);
+    position: absolute;
+    top: 15px;
+    right:15px;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#para1{
+    position:absolute;
+}
+#hex1para{
+    margin-left:420px;
+    margin-top:20px;
+    text-align: justify;
+    color:rgb(240, 237, 234);
+    font-size:30px;
+     font-family: "Niconne", cursive;
+    font-weight:100;
+}
+#hexagon2{
+    background-color: rgb(20, 0, 134);
+    height:80px;
+    width:90px;
+    margin-left:230px;
+    margin-top:115px;
+    clip-path: polygon(25% 0, 
+    75% 0, 
+    100% 50%, 
+    75% 100%, 
+    25% 100%, 
+    0 50%);
+    transform: rotate(90deg);
+}
+#name2{
+    text-align:center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    transform:rotate(-90deg);
+    position: absolute;
+    top: 28px;
+    right:29px;
+}
+#para2{
+    position:absolute;
+}
+#hex2para{
+    margin-left:420px;
+    margin-top:130px;
+    text-align: justify;
+    color:rgb(246, 246, 250);
+    font-size:30px;
+    font-weight:100;
+     font-family: "Niconne", cursive;
+}
+#hexagon3{
+    background-color: rgb(2, 76, 180);
+    height:80px;
+    width:90px;
+    margin-left:210px;
+    margin-top:210px;
+    clip-path: polygon(25% 0, 
+    75% 0, 
+    100% 50%, 
+    75% 100%, 
+    25% 100%, 
+    0 50%);
+    transform: rotate(90deg);
+}
+#name3{
+    text-align:center;
+    font-size:20px;
+    transform:rotate(-90deg);
+    position: absolute;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    top: 16px;
+    right:20px;
+}
+#para3{
+    position:absolute;
+}
+#hex3para{
+    margin-left:420px;
+    margin-top:210px;
+    text-align: justify;
+    color:rgb(228, 230, 232);
+    font-size:30px;
+     font-family: "Niconne", cursive;
+    font-weight:100;
+}
